@@ -1,0 +1,17 @@
+<touristVouchers>
+
+    <touristVoucher>
+        <country>USA</country>
+        <type>TOURIST</type>
+        <transport>TELEPORTATION</transport>
+        <days>long</days>
+        <hotel>
+            <stars>5</stars>
+            <persons>3</persons>
+            <payedBreakfast>true</payedBreakfast>
+            <hasPool>true</hasPool>
+        </hotel>
+        <price>15000</price>
+    </touristVoucher>
+
+</touristVouchers>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="touristVouchers" type="TouristVouchers"/>
+
+    <xsd:complexType name="TouristVouchers">
+        <xsd:sequence>
+            <xsd:element name="touristVoucher" type="TouristVoucher" minOccurs="0"
+                         maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="TripType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="WEEKEND"/>
+            <xsd:enumeration value="TOURIST"/>
+            <xsd:enumeration value="VACATION"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="TransportType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="PLANE"/>
+            <xsd:enumeration value="TRAIN"/>
+            <xsd:enumeration value="BUS"/>
+            <xsd:enumeration value="CAR"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="Hotel">
+        <xsd:sequence>
+            <xsd:element name="stars" type="xsd:int"/>
+            <xsd:element name="persons" type="xsd:int"/>
+            <xsd:element name="payedBreakfast" type="xsd:boolean"/>
+            <xsd:element name="hasPool" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="TouristVoucher">
+        <xsd:all>
+            <xsd:element name="country" type="xsd:string"/>
+            <xsd:element name="type" type="TripType"/>
+            <xsd:element name="transport" type="TransportType"/>
+            <xsd:element name="days" type="xsd:int"/>
+            <xsd:element name="hotel" type="Hotel"/>
+            <xsd:element name="price" type="xsd:int"/>
+        </xsd:all>
+    </xsd:complexType>
+
+</xsd:schema>

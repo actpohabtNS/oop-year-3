@@ -1,0 +1,31 @@
+<touristVouchers>
+
+    <touristVoucher>
+        <country>Germany</country>
+        <type>WEEKEND</type>
+        <transport>PLANE</transport>
+        <days>5</days>
+        <hotel>
+            <stars>4</stars>
+            <persons>1</persons>
+            <payedBreakfast>true</payedBreakfast>
+            <hasPool>true</hasPool>
+        </hotel>
+        <price>7000</price>
+    </touristVoucher>
+
+    <touristVoucher>
+        <country>Ukraine</country>
+        <type>WEEKEND</type>
+        <transport>BUS</transport>
+        <days>3</days>
+        <hotel>
+            <stars>3</stars>
+            <persons>2</persons>
+            <payedBreakfast>false</payedBreakfast>
+            <hasPool>false</hasPool>
+        </hotel>
+        <price>300</price>
+    </touristVoucher>
+
+</touristVouchers>
