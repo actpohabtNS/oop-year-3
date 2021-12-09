@@ -67,7 +67,6 @@ public class Main extends SimpleApplication {
     /** Set up Physics Game */
     bulletAppState = new BulletAppState();
     stateManager.attach(bulletAppState);
-    //bulletAppState.getPhysicsSpace().enableDebug(assetManager);
 
     /** Configure cam to look at scene */
     cam.setLocation(new Vector3f(0, 4f, 6f));
@@ -159,6 +158,7 @@ public class Main extends SimpleApplication {
     floor_geo.addControl(floor_phy);
     bulletAppState.getPhysicsSpace().add(floor_phy);
   }
+  
   /**
    * Rotate floor in y axis for specified degrees
    * @param deg 

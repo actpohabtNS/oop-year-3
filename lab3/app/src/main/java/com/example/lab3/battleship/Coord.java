@@ -1,10 +1,10 @@
 package com.example.lab3.battleship;
 
-public class Coords {
+public class Coord {
     public int x;
     public int y;
 
-    public Coords(int x, int y) {
+    public Coord(int x, int y) {
         this.x = x;
         this.y = y;
     }

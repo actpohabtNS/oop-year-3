@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ship {
+
+    private final Orientation orientation;
+    private final int xStart, y;
+    private final int size;
+    private boolean[] damaged;
+
     public enum Orientation {
         HORIZONTAL,
         VERTICAL;
@@ -20,11 +26,6 @@ public class Ship {
             return null;
         }
     }
-
-    private final Orientation orientation;
-    private final int xStart, y;
-    private final int size;
-    private boolean[] damaged;
 
     public Ship(int size, Orientation orientation, int xStart, int y) throws ShipException {
         if (size <= 0 || size > GameSetup.maxShipSize ||

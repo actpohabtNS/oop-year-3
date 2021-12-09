@@ -84,10 +84,10 @@ public class BoardView extends View {
         fieldPaint.setStyle(Paint.Style.FILL);
         fieldPaint.setAntiAlias(true);
 
-        _drawBoard(board, canvas);
+        drawBoard(board, canvas);
     }
 
-    private void _drawBoard(Board board, Canvas canvas) {
+    private void drawBoard(Board board, Canvas canvas) {
         float x = cellPadding + cellSize * 1.5f + hPadding;
         float y = cellSize + vPadding;
         for (int i = 1; i <= GameSetup.boardSize; i++, x += cellSize + cellPadding) {
@@ -112,9 +112,9 @@ public class BoardView extends View {
                     case DAMAGED_SHIP:
                         color = getResources().getColor(R.color.damaged_ship_color, null);
                         break;
-                    case SHIP:
-                        color = getResources().getColor(R.color.teal_700, null);
-                        break;
+//                    case SHIP:
+//                        color = getResources().getColor(R.color.teal_700, null);
+//                        break;
                 }
                 fieldPaint.setColor(color);
                 canvas.drawRect(x, y, x + cellSize, y + cellSize, fieldPaint);
