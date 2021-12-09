@@ -1,0 +1,5 @@
+Device{width=12, height=12, name='name'}
+Device{width=12, height=12, name='name'}
+Device{width=10, height=16, name='Samsung'}
+Person{name=Nikita, age=19, weight='85'}
+Person{name=Nikita, age=19, weight='85'}
